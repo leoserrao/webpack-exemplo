@@ -10,3 +10,4 @@ soma(5, 10);
 const heading = new Heading();
 
 heading.create("Este título é dinâmico");
+heading.create("Hot Reload");

@@ -9,6 +9,18 @@ module.exports = {
         path: path.resolve(__dirname, './dist')
     },
     mode: 'development',
+    devServer: {
+        //contentBase
+        static: {
+            directory: path.resolve(__dirname, './dist')
+        },
+        // publicPath
+    devMiddleware:{
+        publicPath: "https://localhost:9000/dist/",
+     },
+        port: 9000,
+        hot: true
+    },
     module: {
         rules: [
             {
